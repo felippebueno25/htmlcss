@@ -1,10 +1,11 @@
 body {
     height: 100vh;
-    background-color: black;
-    background-image: url('imagens/wallpaper002.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    
+    /* Shorthand - background
+        color > image > repeat > position > [size] > attachment
+    */
+
+    background: black url('imagens/wallpaper002.jpg') no-repeat center center / cover fixed;
 }
 main {
     background-color: white;

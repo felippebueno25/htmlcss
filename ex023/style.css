@@ -1,11 +1,17 @@
 body {
-    height: 98vh;
-    width: 98vw;
-    margin: auto auto;
-    border: 1px solid black;
+    height: 100vh;
+    background-color: black;
+    background-image: url('imagens/wallpaper002.jpg');
     background-repeat: no-repeat;
-    background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
-    background-size: 50px;
     background-position: center center;
+    background-size: cover;
+}
+main {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 400px;
+    margin: auto;
+    padding: 20px;
 }
 

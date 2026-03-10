@@ -87,7 +87,7 @@ nav#menu {
 
 nav#menu a {
     display: flexbox;
-    margin: auto auto;
+    margin: auto 1px;
     color: var(--cor-header-h1);
     text-decoration: none;
     font-weight: bold;

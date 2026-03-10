@@ -109,9 +109,10 @@ main {
     background-image: linear-gradient(to bottom, var(--cor-fundo-main), #1b2a3d);
     /*! border-radius: 10px 10px 10px 10px; */
     box-shadow: rgba(0, 0, 0, 0.445) 1.5px 1.5px 2px;
+    padding: 20px;
 }
 main > article {
-    padding: 35px;
+    padding: 15px;
     max-width: 800px;
     margin: 0 auto;
     background-color: white;
@@ -130,6 +131,7 @@ main > article > p {
 }
 
 main > article > h1 {
+    text-align: left;
     font-family: var(--fonte-titulo);
     color: var(--cor-article-h1);
     padding: 5px;

@@ -103,7 +103,6 @@ nav#menu a:hover {
 
 /* Estilos para o main */
 main {
-    padding: 20px;
     /* background-color: var(--cor-fundo-main); */
     background-image: linear-gradient(to bottom, var(--cor-fundo-main), #1b2a3d);
     /*! border-radius: 10px 10px 10px 10px; */

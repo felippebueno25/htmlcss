@@ -51,6 +51,7 @@ header {
     text-align: center;
     border-radius: 10px 10px 0 0;
     background-image: linear-gradient(var(--cor-header), #10304c);
+    box-shadow: rgba(0, 0, 0, 0.445) 1.5px 1.5px 2px;
 }
 
 header > h1 {
@@ -106,17 +107,19 @@ nav#menu a:hover {
 /* Estilos para o main */
 main {
     /* background-color: var(--cor-fundo-main); */
-    background-image: linear-gradient(to bottom, var(--cor-fundo-main), #1b2a3d);
+    /* background-image: linear-gradient(to bottom, var(--cor-fundo-main), #1b2a3d); */
+    background-image: url(imagens/statuario-freddo-minimale-3912064287.jpg);
     /*! border-radius: 10px 10px 10px 10px; */
     box-shadow: rgba(0, 0, 0, 0.445) 1.5px 1.5px 2px;
     padding: 20px;
 }
 main > article {
-    padding: 15px;
+    padding: 35px;
     max-width: 800px;
     margin: 0 auto;
     background-color: white;
     border-radius: 10px;
+    border: 1px solid #6d92c9;
     max-width: 800px;
     box-shadow: rgba(0, 0, 0, 0.445) 1.5px 1.5px 2px;
 }

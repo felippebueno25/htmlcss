@@ -69,8 +69,11 @@ section {
     padding-left: 20px;
 }
 
+
+
 section.plain {
     background-color: antiquewhite;
+    max-height: fit-content;
 }
 
 section.img {
@@ -78,6 +81,7 @@ section.img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     p {
         color: white;
         background-image: linear-gradient(to right, black, transparent);

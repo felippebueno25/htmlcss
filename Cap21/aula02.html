@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+
+        h1#titulo {
+            border: 1px solid black;
+            background-color: yellowgreen;
+            padding: 8px;
+        }
+
+        div#tabela {
+            text-align: center;
+            height: fit-content;
+            width: fit-content;
+            background-color: rgb(230, 230, 230);
+        }
+
+        table {
+            border: 1px solid rgb(0, 0, 0);
+            border-collapse: collapse;
+            height: 400px;
+            width: 400px;
+        }
+        
+        caption {
+            border: 1px solid rgb(0, 0, 0);
+            background-color: beige;
+            padding: 8px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+        }
+
+        th {
+            border: 1px solid black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            width: fit-content;
+            height: fit-content;
+        }
+
+        td {
+            border: 1px solid black;
+            text-align: center;
+            /* vertical-align: top; */
+        }
+
+        td.nome {
+            color: rgb(105, 150, 0);
+        }
+
+        td.sobrenome {
+            color: blueviolet;
+        }
+
+        </style>
+</head>
+<body>
+    <div id="tabela">
+        <h1 id="titulo">Tabelas!</h1>
+        <table>
+            <caption>Nomes</caption>
+                <tr>
+                    <th>Primeiro</th>
+                    <th>Segundo</th>
+                </tr>
+                <tr>
+                    <td class="nome">Felippe</td>
+                    <td class="sobrenome">Bueno</strong></td>
+                </tr>
+                <tr>
+                    <td class="nome">Mirian</td>
+                    <td class="sobrenome">Bueno</strong></td>
+                </tr>
+                <tr>
+                    <td class="nome">Roberto</td>
+                    <td class="sobrenome">Bueno</strong></td>
+                </tr>
+                <tr>
+                    <td class="nome">Myllena</td>
+                    <td class="sobrenome">Bueno</strong></td>
+                </tr>
+        </table>
+    </div>
+
+    <script>
+        var titulo = document.getElementsByTagName("title")[0].innerHTML
+            document.getElementById("titulo").innerHTML = titulo
+    </script>
+</body>
+</html>

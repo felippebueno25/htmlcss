@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabeçalho Fixo em Tabelas Grandes</title>
+    <style>
+
+        h1#titulo {
+            background-color: yellowgreen;
+            padding: 8px;
+            /* margin: 0; */
+        }
+
+        div#tabela {
+            text-align: center;
+            height: fit-content;
+            width: fit-content;
+            margin: auto
+        }
+
+        table {
+            border: 1px solid rgb(0, 0, 0);
+            border-collapse: collapse;
+            margin: 0 auto
+            /* height: 400px;
+            width: 400px; */
+        }
+        
+        caption {
+            background-color: rgb(62, 122, 190);
+            color: rgb(255, 255, 255);
+            padding: 8px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+        }
+
+        tbody > tr:nth-child(2n) { /* even */
+            background-color: lightgray;
+        }
+
+        /* tbody > tr:nth-child(2n - 1) {  [odd]
+            background-color: lightgray;
+        } */
+
+        th {
+            border: 1px solid black;
+            background-color: gray;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding-left: 15px;
+            padding-right: 15px;
+            font-size: small;
+        }
+
+        thead > tr > th {
+            position: sticky; /* Não Funcionou :( */
+            background-color: gray;
+        }
+
+        td {
+            border: 1px solid black;
+            text-align: center;
+            /* vertical-align: top; */
+            font-family: monospace;
+            padding: 8px;
+        }
+
+        td.nome {
+            color: rgb(105, 150, 0);
+        }
+
+        td.sobrenome {
+            color: blueviolet;
+        }
+
+        </style>
+</head>
+<body>
+    <div id="tabela">
+        <h1 id="titulo">Tabelas!</h1>
+        <table>
+            <caption>Nomes</caption>
+                <thead>
+                    <tr>
+                        <th scope="col" style="width: 100px;">Primeiro</th>
+                        <th scope="col">Segundo</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="nome">Felippe</td>
+                        <td class="sobrenome">Bueno</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="nome">Mirian</td>
+                        <td class="sobrenome">Bueno</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="nome">Roberto</td>
+                        <td class="sobrenome">Bueno</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="nome">Myllena</td>
+                        <td class="sobrenome">Bueno</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="nome">Loki</td>
+                        <td class="sobrenome">Bueno</strong></td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <th scope="row">Total</th>
+                    <td id="Total"></td>
+                </tfoot>
+        </table>
+    </div>
+    <p style="text-indent: 20px; text-align: justify;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, voluptatum animi asperiores repellendus nihil saepe velit reprehenderit laudantium accusantium corrupti dignissimos sapiente, quibusdam qui atque ipsa ut. Ab, maiores pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quos sequi placeat delectus, ullam voluptatum voluptatem suscipit repudiandae repellendus aliquam molestias sit dolorem consequuntur vitae itaque? Rem temporibus animi sint? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate ullam libero consequuntur eligendi ad doloremque nesciunt dolorem nemo explicabo neque eveniet expedita exercitationem, sunt magnam obcaecati quidem? Deleniti, aliquam quos? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam similique officiis magni! Adipisci laborum rem commodi perspiciatis veritatis est reprehenderit quisquam quae autem. Perferendis corrupti soluta dolorem facere, eius tempora! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam asperiores modi sequi cupiditate nihil voluptate omnis ut a? Rerum nam eaque nemo temporibus odio minus perspiciatis quaerat fugit nobis natus.</p>
+    <script>
+        var total = document.querySelectorAll(".nome")
+        document.getElementById("Total").innerHTML = `<strong>${total.length}</strong>`
+
+        var titulo = document.getElementsByTagName("title")[0].innerHTML
+        document.getElementById("titulo").innerHTML = titulo
+    </script>
+</body>
+</html>

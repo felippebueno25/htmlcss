@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclagem de Células</title>
+    <style>
+        h1#titulo {
+            text-align: center;
+        }
+        table {
+            margin: 0 auto;
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 300px;
+        }
+        
+        td {
+            padding: 10px;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="tabela">
+        <h1 id="titulo">Tabelas!</h1>
+        <table>
+            <tr>
+                <td>A</td>
+                <td colspan="2">B</td>
+                <!-- <td>C</td> -->
+            </tr>
+            <tr>
+                <td rowspan="3">D</td>
+                <td>E</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <!-- <td>G</td> -->
+                <td>H</td>
+                <td>I</td>
+            </tr>
+            <tr>
+                <!-- <td>J</td> -->
+                <td>K</td>
+                <td>L</td>
+            </tr>
+        </table>
+    </div>
+    
+    <script>
+        var titulo = document.getElementsByTagName("title")[0].innerHTML
+        document.getElementById("titulo").innerHTML = titulo
+    </script>
+</body>
+</html>

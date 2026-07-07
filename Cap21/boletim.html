@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boletim Escolar</title>
+    <style>
+        body {
+            background-color: rgb(22, 66, 48);
+            color: aliceblue;
+            text-align: center;
+            font-family: monospace;
+        }
+        
+        div {
+            background-color: aliceblue;
+            padding: 15px;
+            border-radius: 20px;
+            width: fit-content;
+            margin: 0 auto;
+            box-shadow: 5px 10px rgba(0, 0, 0, 0.26);
+        }
+
+        caption {
+            font-size: large;
+            color: black;
+            padding: 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border: 1px solid black;
+            background-color: chartreuse;
+
+        }
+
+        table {
+            background-color: rgba(128, 163, 240, 0.466);
+            color: rgb(11, 58, 58);
+            border-collapse: collapse;
+            border: 2px solid rgb(255, 255, 255);
+            margin: 0 auto;
+            width: 400px;
+        }
+        
+        th {
+            padding: 5px;
+            border-collapse: collapse;
+            border: 1px solid rgb(255, 255, 255);
+        }
+
+        th.col {
+            background-color: yellowgreen;
+        }
+        
+        th.row {
+            background-color: darkcyan;
+            color: aliceblue;
+        }
+
+        th.rowfoot {
+            background-color: rgb(88, 0, 139);
+            color: aliceblue;
+            padding: 5px;
+        }
+
+        td {
+            background-color: rgba(176, 196, 222, 0.719);
+            color: black;
+            padding: 5px;
+            border-collapse: collapse;
+            border: 1px solid rgb(255, 255, 255);
+            font-size: small;
+        }
+
+        td.medexatas {
+            background-color: rgb(88, 0, 139);
+            color: aliceblue;
+            padding: 5px;
+            border-collapse: collapse;
+        }
+
+        td.medhumanas {
+            background-color: rgb(88, 0, 139);
+            color: aliceblue;
+            padding: 5px;
+            border-collapse: collapse;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="titulo"></h1>
+    </header>
+    <table id="tabela">
+        <thead>
+            <tr>
+                <th scope="col" rowspan="2" class="col" id="area">Área</th>
+                <th scope="col" rowspan="2" class="col" id="disciplina">Disciplinas</th>
+                <th scope="col" colspan="2" class="col" id="notas">Notas</th>
+                <th scope="col" rowspan="2" class="col" id="media">Média</th>
+            </tr>
+            <tr>
+                <th class="col">Nota 1</th>
+                <th class="col">Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" rowspan="4" class="row" id="exatas"> Exatas</th>
+                <td class="exata">Matemática</td>
+                <td class="n1">5.5</td>
+                <td class="n2">6.0</td>
+                <td class="media">x</td>
+            </tr>
+            <tr>
+                <td class="exata">Física</td>
+                <td class="n1">7.5</td>
+                <td class="n2">9.5</td>
+                <td class="media">x</td>
+            </tr>
+            <tr>
+                <td class="exata">Química</td>
+                <td class="n1">4.5</td>
+                <td class="n2">6.0</td>
+                <td class="media">x</td>
+            </tr>
+            <tr>
+                <td class="exata">Biologia</td>
+                <td class="n1">7.5</td>
+                <td class="n2">9.5</td>
+                <td class="media">x</td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="4" class="rowfoot">Média de Exatas</th>
+                <td class="medexatas">x</td>
+            </tr>
+            <tr>
+                <th scope="row" rowspan="2" class="row"> Humanas</th>
+                <td class="humanas">História</td>
+                <td class="n1">7.0</td>
+                <td class="n2">8.0</td>
+                <td class="media">x</td>
+            </tr>
+            <tr>
+                <td class="humanas">Geografia</td>
+                <td class="n1">8.5</td>
+                <td class="n2">5.5</td>
+                <td class="media">x</td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="4" class="rowfoot">Média de Humanas</th>
+                <td class="medhumanas">x</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="boletim.js"></script>
+</body>
+</html>

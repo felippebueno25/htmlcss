@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colgroup</title>
+    <style>
+        body {
+            background-color: rgb(22, 66, 48);
+            color: aliceblue;
+            text-align: center;
+            font-family: monospace;
+        }
+        
+        div {
+            background-color: aliceblue;
+            padding: 15px;
+            border-radius: 20px;
+            width: fit-content;
+            margin: 0 auto;
+            box-shadow: 5px 10px rgba(0, 0, 0, 0.26);
+        }
+
+        caption {
+            font-size: large;
+            color: black;
+            padding: 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border: 1px solid black;
+            background-color: chartreuse;
+
+        }
+
+        table {
+            background-color: rgba(128, 163, 240, 0.466);
+            color: rgb(15, 22, 22);
+            border-collapse: collapse;
+            border: 2px solid rgb(255, 255, 255);
+            margin: 0 auto;
+            width: 400px;
+        }
+        
+        th {
+            padding: 5px;
+            border-collapse: collapse;
+            border: 1px solid rgb(255, 255, 255);
+        }
+
+        th.col {
+            background-color: yellowgreen;
+        }
+        
+        th.row {
+            background-color: darkcyan;
+            color: aliceblue;
+        }
+
+        th.rowfoot {
+            background-color: rgb(88, 0, 139);
+            color: aliceblue;
+            padding: 5px;
+        }
+
+        td {
+            background-color: rgba(176, 196, 222, 0.719);
+            color: black;
+            padding: 5px;
+            border-collapse: collapse;
+            border: 1px solid rgb(255, 255, 255);
+            font-size: small;
+        }
+
+        td.medexatas {
+            background-color: rgb(88, 0, 139);
+            color: aliceblue;
+            padding: 5px;
+            border-collapse: collapse;
+        }
+
+        td.medhumanas {
+            background-color: rgb(88, 0, 139);
+            color: aliceblue;
+            padding: 5px;
+            border-collapse: collapse;
+        }
+
+        .vermelho {
+            background-color: red;
+        }
+
+        .amarelo {
+            background-color: orange;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="titulo"></h1>
+    </header>
+    <table>
+        <colgroup>
+            <col class="vermelho">
+            <col class="amarelo">
+            <col class="vermelho" span="2">
+            <col class="amarelo">
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+                <th scope="col">CPF</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Felippe</td>
+                <td>Masculino</td>
+                <td>33</td>
+                <td>Músico</td>
+                <td>152.473.637-61</td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="boletim.js"></script>
+</body>
+</html>

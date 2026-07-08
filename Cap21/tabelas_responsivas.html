@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas em telas pequenas</title>
+    <style>
+        body {
+            background-image: linear-gradient(to left, #443333,
+            #443344 50%);
+            color: aliceblue;
+            text-align: center;
+            font-family: monospace;
+        }
+        
+        div {
+            overflow-x: auto;
+
+        }
+
+        table {
+            background-color: rgba(128, 163, 240, 0.466);
+            color: rgb(15, 22, 22);
+            border-collapse: collapse;
+            border: 2px solid rgb(255, 255, 255);
+            margin: 0 auto;
+            width: 600px;
+        }
+        
+        caption {
+            font-size: large;
+            color: black;
+            padding: 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border: 2px solid rgb(255, 255, 255);
+            background-color: chartreuse;
+            text-shadow: 2px 2px rgb(224, 255, 224);
+        }
+
+        th {
+            padding: 5px;
+            border-collapse: collapse;
+            border: 1px solid rgb(0, 0, 0);
+        }
+
+        td {
+            background-color: aliceblue;
+            border-collapse: collapse;
+            border: 1px solid rgb(0, 0, 0);
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="titulo"></h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolores, temporibus corporis ipsam ipsum enim ratione, cum illum maiores saepe commodi porro soluta quas, inventore quis omnis. Iusto, saepe assumenda!</p>
+    </header>
+    <div id="container">
+        <table>
+            <caption>Tabela Responsiva</caption>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Jan</th>
+                    <th>Fev</th>
+                    <th>Mar</th>
+                    <th>Abr</th>
+                    <th>Mai</th>
+                    <th>Jun</th>
+                    <th>Jul</th>
+                    <th>Ago</th>
+                    <th>Set</th>
+                    <th>Out</th>
+                    <th>Nov</th>
+                    <th>Dez</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>TV 40'</td>
+                    <td>01</td>
+                    <td>02</td>
+                    <td>04</td>
+                    <td>05</td>
+                    <td>03</td>
+                    <td>07</td>
+                    <td>04</td>
+                    <td>01</td>
+                    <td>09</td>
+                    <td>02</td>
+                    <td>06</td>
+                    <td>01</td>
+                </tr>
+                <tr>
+                    <td>Celular pica</td>
+                    <td>01</td>
+                    <td>02</td>
+                    <td>04</td>
+                    <td>05</td>
+                    <td>03</td>
+                    <td>07</td>
+                    <td>04</td>
+                    <td>01</td>
+                    <td>09</td>
+                    <td>02</td>
+                    <td>06</td>
+                    <td>01</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="boletim.js"></script>
+</body>
+</html>

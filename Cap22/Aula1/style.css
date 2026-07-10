@@ -1,0 +1,39 @@
+body {
+    background-color: #906fbb;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 auto;
+}
+
+h1 {
+    color: aliceblue;
+    font-size: 32pt;
+    text-align: center;
+}
+
+h2 {
+    text-align: left;
+}
+
+div {
+    width: fit-content;
+    height: fit-content;
+    background-color: #a6d4ff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.151);
+}
+
+div > p {
+    width: 600px;
+}
+
+footer {
+    padding: 5px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: rgb(35, 8, 133);
+    color: white;
+}
+
+

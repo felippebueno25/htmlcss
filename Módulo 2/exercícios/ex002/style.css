@@ -1,0 +1,20 @@
+body {
+    background-color: #22438b;
+}
+
+h1 {
+    color: #082024;
+    font-family:monospace;
+}
+
+h2 {
+    color: #84ceff;
+    font-family:monospace;
+    font-size: 20px;
+}
+
+p {
+    color: #6dffce;
+    font-family:monospace;
+    font-size: 18px;
+}

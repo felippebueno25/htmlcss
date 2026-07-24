@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Tabelas Mescladas</title>
+    <style>
+        body {
+            background-color: #e2e7ee;
+            font-family: monospace, monospace;
+            display: flex; justify-content: center; align-items: center; height: 100vh;
+        }
+        table {
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        th, td {
+            border: 2px solid #383737;
+            padding: 20px;
+            text-align: center;
+        }
+        thead {
+            background-color: #af9191;
+            color: white;
+            text-transform: uppercase;
+            /* bold */
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div style="margin: 0;">
+        <h1 style="display: flex; justify-content: center;">Desafio Tabelas Mescladas</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Grupos</th>
+                    <th scope="col">Nomes</th>
+                    <th colspan="3" scope="colgroup">Filmes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="3" scope="rowgroup">Mulheres</th>
+                    <td>Ana Maria Santos</td>
+                    <td>Alien</td>
+                    <td>Rambo</td>
+                    <td>Vingadores</td>
+                </tr>
+                <tr>
+                    <td>Beatriz Silva</td>
+                    <td>O Exorcista</td>
+                    <td>O Exterminador do Futuro</td>
+                    <td>Capitão América</td>
+                </tr>
+                <tr>
+                    <td>Carla Oliveira</td>
+                    <td>O Iluminado</td>
+                    <td>O Predador</td>
+                    <td>Homem de Ferro</td>
+                </tr>
+                <tr>
+                    <th rowspan="3" scope="rowgroup">Homens</th>
+                    <td>Daniel Souza</td>
+                    <td>O Poderoso Chefão</td>
+                    <td>O Senhor dos Anéis</td>
+                    <td>Matrix</td>
+                </tr>
+                <tr>
+                    <td>Eduardo Lima</td>
+                    <td>Clube da Luta</td>
+                    <td>Gladiador</td>
+                    <td>John Wick</td>
+                </tr>
+                <tr>
+                    <td>Fernando Costa</td>
+                    <td>O Silêncio dos Inocentes</td>
+                    <td>O Grande Lebowski</td>
+                    <td>Mad Max</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

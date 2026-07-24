@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando Google Fonts</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="javascript" href="script.js">
+    <!-- 
+    Em HTML, id e class são atributos usados para identificar elementos de forma única ou em grupo, respectivamente. O id é único e deve ser usado para um único elemento, enquanto a class pode ser usada para múltiplos elementos. Ambos são úteis para aplicar estilos CSS ou manipular elementos com JavaScript. Em CSS, o id é referenciado com um # (ex: #meuId) e a class com um . (ex: .minhaClasse). O id tem uma especificidade mais alta do que a class, o que significa que as regras de estilo aplicadas a um id irão sobrescrever as aplicadas a uma class, caso haja conflito.
+    -->
+    <style>
+        /* FONTES  */
+        @font-face {
+            font-family: 'Ubuntu';
+            src: url(fonts/Ubuntu/Ubuntu-Regular.ttf) format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Bebas';
+            src: url(fonts/Bebas_Neue/BebasNeue-Regular.ttf) format('truetype');
+        }
+
+        body {
+            color: white;
+            background-image: linear-gradient(  to left, #12298d, #1768ff);
+        }
+        h1 {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+            font-size: 2.5em;
+            text-align: center;
+        }
+
+        h1#principal {
+            color: #ffffff;
+            background-image: linear-gradient(to right, #12298d, #1768ff);
+            border-radius: 0.5em;
+            padding: .5em;
+            /* Adiciona uma borda ao redor do título */
+            border: 2px solid #ffffff;
+                /* Adiciona um efeito de sombra para destacar o título */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 800px; /* Define uma largura máxima para o título */
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+            padding: 0.5em;
+        }
+        p {
+            text-align: justify;
+            text-indent: 30px;
+
+        }
+
+        /* IDs */
+        #ubu {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        #bebas {
+            font-family: 'Bebas', sans-serif;
+        }
+
+        #segoe {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+        }
+
+        #times {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        /* CLASSES */
+        .texto {
+            background-color: #313131;
+            color: #ffffff;
+            border-radius: 0.5em;
+            padding: 0.75em;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .container {
+            background-color: #ffffff;
+            color: #313131;
+            border-radius: 0.5em;
+            padding: 0.75em;
+            padding-top: 0;
+            max-width: 800px;
+            margin: 0 auto;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .highlight {
+            background-color: #ffeb3b;
+            color: #000;
+            padding: 0.2em 0.4em;
+            border-radius: 0.2em;
+        }
+        
+        /* PSEUDO CLASSES */
+        .container:hover {
+            background-color: #313131;
+            color: #ffffff;
+            /* inverte as cores de '.texto' também */
+            .texto {
+                background-color: #ffffff;
+                color: #313131;
+            }
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <!-- aplicar Javascript à classe container -->
+    <h1 id="principal">Usando Google Fonts</h1>
+    <div class="container" >
+        <h2>Ubuntu: </h2>        
+            <div class="texto">
+                <p id="ubu">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores tempora ut repudiandae sequi esse recusandae quis, facilis ab voluptates! Explicabo quod voluptatem magnam consequatur quisquam nobis, laborum magni facere? Blanditiis!</p>
+            </div>
+    </div>
+    <br>
+    <div class="container">
+        <h2>Bebas: </h2>
+            <div class="texto">
+                <p id="bebas">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores tempora ut repudiandae sequi esse recusandae quis, facilis ab voluptates! Explicabo quod voluptatem magnam consequatur quisquam nobis, laborum magni facere? Blanditiis!</p>
+            </div>  
+    </div>
+    <br>
+    <div class="container">
+        <h2>Segoe UI: </h2>
+            <div class="texto">
+                <p id="segoe">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores tempora ut repudiandae sequi esse recusandae quis, facilis ab voluptates! Explicabo quod voluptatem magnam consequatur quisquam nobis, laborum magni facere? Blanditiis!</p>
+            </div>
+    </div>
+    <br>
+    <div class="container">
+        <h2>Times New Roman: </h2>
+            <div class="texto">
+                <p id="times">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores tempora ut repudiandae sequi esse recusandae quis, facilis ab voluptates! Explicabo quod voluptatem magnam consequatur quisquam nobis, laborum magni facere? Blanditiis!</p>
+            </div>
+    </div>
+
+</body>
+</html>

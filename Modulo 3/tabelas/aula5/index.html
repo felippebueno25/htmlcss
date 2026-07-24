@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colgroup</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: monospace, monospace;
+        }
+        table {
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .amarelo {
+            background-color: yellow;
+        }
+        .verde {
+            background-color: lightgreen;
+        }
+        .azul {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Colgroup</h1>
+    <table>
+        <colgroup>
+            <col class="amarelo">
+            <col class="verde">
+            <col class="azul">
+        </colgroup>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
+</body>
+</html>

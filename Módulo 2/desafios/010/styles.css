@@ -1,0 +1,247 @@
+/* Paleta de cores: #BEE6CE, #2C363F, #058ED9, #EF8354, #9D6381*/
+:root {
+    --cor-header: #192631;
+    --cor-header-h1: #fdf8f2;
+    --cor-header-h2: #ffebdd;
+    --cor-primaria: #052cd9;
+    --cor-link: #212268;
+    --cor-article-h1: #263a4b;
+    --cor-article-h2: var(--cor-fundo-main);
+    --cor-fundo-main: #213546;
+    --cor-fundo: #d0f4ff;
+    --cor-fundo-2: #2f2f3d;
+    --cor-texto-claro: #ffffff;
+    --cor-destaque: #405b8d;
+
+    --fonte-titulo: 'Android', sans-serif;
+    --fonte-header-subtitulo: monospace, monospace;
+    --font-paragrafo: monospace, monospace;
+    --font-menu: 'Tahoma', sans-serif;
+    --font-footer: 'Tahoma', sans-serif;
+
+
+}
+
+@font-face {
+    font-family: 'Android';
+    src: url(fontes/idroid.otf) format('opentype');
+}
+
+/* Reset básico para margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-weight: normal;
+}
+/* Estilos para o corpo da página */
+body {
+    /* background-color: var(--cor-link); */
+    background-image: linear-gradient(to bottom, var(--cor-fundo), var(--cor-fundo-2));
+    color: var(--cor-header);
+    margin: 0;
+    padding: 5px;
+    border-radius: 10px;
+}
+header {
+    color: var(--cor-texto-claro);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    background-image: linear-gradient(var(--cor-header), #10304c);
+}
+
+header > h1 {
+    font-family: var(--fonte-titulo);
+    font-style: bold;
+    font-size: 3em;
+    margin: 0 auto;
+    color: var(--cor-header-h1);
+    text-shadow: rgba(0, 0, 0, 0.486) 2px 4px 2px;
+}
+
+header > h2 {
+    font-size: 1.1em;
+    font-family: var(--fonte-header-subtitulo);
+    color: var(--cor-header-h2);
+    text-shadow: rgba(0, 0, 0, 0.445) 1.5px 1.5px 2px;
+    padding: 10px;
+}
+
+
+/* Estilos para os links do menu */
+nav#menu {
+    font-family: var(--font-menu);
+    min-width: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 15px 0;
+    border-width: 29px;
+    /* background-image: linear-gradient(to top, var(--cor-fundo), var(--cor-destaque)); */
+    background-color: var(--cor-destaque);
+    
+}
+
+nav#menu a {
+    color: var(--cor-header-h1);
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: rgba(0, 0, 0, 0.164) 1.5px 1.5px 2px;
+    padding: 5px 20px;
+}
+
+nav#menu a:hover {
+    color: var(--cor-destaque);
+    background-color: var(--cor-fundo);
+    border-radius: 10px;
+    padding: 5px 20px;
+    
+}
+
+/* Estilos para o main */
+main {
+    padding: 20px;
+    /* background-color: var(--cor-fundo-main); */
+    background-image: linear-gradient(to bottom, var(--cor-fundo-main), #1b2a3d);
+    /*! border-radius: 10px 10px 10px 10px; */
+    box-shadow: rgba(0, 0, 0, 0.445) 1.5px 1.5px 2px;
+}
+main > article {
+    padding: 35px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    min-width: 320px;
+    max-width: 800px;
+    box-shadow: rgba(0, 0, 0, 0.445) 1.5px 1.5px 2px;
+}
+
+
+main > article > p {
+    font-family: var(--font-paragrafo);
+    line-height: 1.4;
+    text-align: justify;
+    text-indent: 30px;
+    margin-bottom: 20px;
+}
+
+main > article > h1 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-article-h1);
+    padding: 5px;
+    margin-bottom: 20px;
+    text-shadow: rgba(0, 0, 0, 0.24) 2px 3px 1px;
+}
+
+main > article > h2 {
+    font-family: var(--fonte-titulo);
+    font-size: 1.2em;
+    color: var(--cor-texto-claro);
+    padding: 5px 0 5px 30px;
+    background-image: linear-gradient(to right,  var(--cor-destaque), transparent);
+    border-radius: 10px 0 10px 0;
+    text-shadow: rgba(0, 0, 0, 0.671) 2px 3px 1px;
+    margin-bottom: 15px;
+}
+
+div.youtube {
+    background-color: var(--cor-destaque);
+    margin: 0px -35px 30px -35px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 59%; /* Proporção 16:9 */
+     height: 0;
+     overflow: hidden;
+     box-shadow: rgba(0, 0, 0, 0.445) 1.5px 1.5px 2px;
+
+}
+
+div.youtube > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+     width: 90%;
+     height: 90%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    max-width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.445) 1.5px 1.5px 2px;
+}
+/* Estilos para o aside */
+aside > p {
+    font-family: var(--fonte-paragrafo);
+    text-align: center;
+    background-color: #dadada;
+    padding: 10px;
+    margin: 20px 0;
+    border-left: 5px solid var(--cor-destaque);
+    border-radius: 10px 0 10px 0;
+}
+
+aside#aprendermais {
+    background-color: #d5d1da;
+    color: var(--cor-header );
+    border-radius: 10px 0 10px 0;
+    padding: 0 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.342);
+}
+
+aside#aprendermais h2 {
+    background-color: var(--cor-destaque);
+    border-radius: 10px 10px 0 0;
+    color: var(--cor-texto-claro);
+    margin: -10px -10px 0px -10px;
+    padding: 10px;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.5) 1.5px 1.5px 2px;
+}
+
+aside#aprendermais ul {
+    font-family: monospace;
+    list-style-position: inside;
+    padding: 20px;
+    margin: 0 auto;
+    columns: 2;
+}
+
+aside#aprendermais p {
+    background-color: inherit;
+    text-indent: 30px;
+    font-family: monospace;
+    color: black;
+    text-align: left;
+    padding: 10px 20px;
+    border-width: 0;
+}
+
+
+/* Estilos para as imagens */
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 100%;
+    background-color: var(--cor-header-h1);
+}
+
+
+/* Estilos para o rodapé */
+footer {
+    background-color: var(--cor-fundo-2);
+    color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.445) 1.5px 1.5px 2px;
+    padding: 10px 40px;
+    margin: 0 auto;
+    max-width: 100%;
+    border-width: 5px;
+    border-color: #8ac96d;
+}
+footer > p {
+    text-align: center;
+    margin: 0;
+}
